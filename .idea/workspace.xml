@@ -4,13 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="292945d9-29c7-446f-89e4-dd153384ba4f" name="Changes" comment="first commit">
-      <change afterPath="$PROJECT_DIR$/validation/validators.py" afterDir="false" />
+    <list default="true" id="292945d9-29c7-446f-89e4-dd153384ba4f" name="Changes" comment="adding validations">
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_parsing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_validation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/validation/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/cleaned/cleaned_jobs_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/cleaned/cleaned_jobs_data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/cleaned/cleaned_reviews_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/cleaned/cleaned_reviews_data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/rawData/jobs.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/rawData/jobs.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/rawData/news.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/rawData/news.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/rawData/reviews.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/rawData/reviews.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/transformed/transformed_jobs_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/transformed/transformed_jobs_data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/transformed/transformed_reviews_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/transformed/transformed_reviews_data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/scrapers/mainScraper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/create_schemas.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/scrapers/testDomainScraper.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_scrapers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testt.py" beforeDir="false" afterPath="$PROJECT_DIR$/testt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/validation/validators.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/validation/validators.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +34,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="Dockerfile" />
       </list>
     </option>
   </component>
@@ -50,6 +64,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python tests.Python tests in test_parsing.py.executor": "Run",
+    "Python tests.Python tests in test_validation.py.executor": "Run",
     "Python.NewsScraper.executor": "Run",
     "Python.ReviewsScraper.executor": "Run",
     "Python.aggregated_feature.executor": "Run",
@@ -71,6 +87,8 @@
     "Python.shoppingScraper.executor": "Run",
     "Python.shopping_feature_eng.executor": "Run",
     "Python.shopping_feautures_eng.executor": "Run",
+    "Python.testDomainScraper.executor": "Run",
+    "Python.test_scrapers.executor": "Run",
     "Python.testt.executor": "Run",
     "Python.validators.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -88,6 +106,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tests" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/scripts/transformation" />
       <recent name="$PROJECT_DIR$/scripts" />
@@ -111,7 +130,7 @@
       <option name="presentableId" value="Default" />
       <updated>1735882038251</updated>
       <workItem from="1735882039503" duration="10000" />
-      <workItem from="1736066595110" duration="58914000" />
+      <workItem from="1736066595110" duration="65899000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -121,16 +140,42 @@
       <option name="project" value="LOCAL" />
       <updated>1736166445147</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="adding validations">
+      <option name="closed" value="true" />
+      <created>1736170239409</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1736170239409</updated>
+    </task>
+    <task id="LOCAL-00003" summary="adding validations">
+      <option name="closed" value="true" />
+      <created>1736170255317</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1736170255317</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="f1bc5a59-acd6-4a04-ae8c-6e0e10d7caf8" value="TOOL_WINDOW" />
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+        <entry key="f1bc5a59-acd6-4a04-ae8c-6e0e10d7caf8">
           <value>
             <State />
           </value>
@@ -140,30 +185,34 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="adding validations" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding validations" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/DataCollectors$forumsScraper.coverage" NAME="forumsScraper Coverage Results" MODIFIED="1736066843679" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scrapers/scrapers" />
-    <SUITE FILE_PATH="coverage/DataCollectors$news_feature_eng.coverage" NAME="news_feature_eng Coverage Results" MODIFIED="1736090962289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts/transformation" />
-    <SUITE FILE_PATH="coverage/DataCollectors$ReviewsScraper.coverage" NAME="ReviewsScraper Coverage Results" MODIFIED="1736066799277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scrapers/scrapers" />
-    <SUITE FILE_PATH="coverage/DataCollectors$main.coverage" NAME="main Coverage Results" MODIFIED="1736170113274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
-    <SUITE FILE_PATH="coverage/DataCollectors$shopping_feature_eng.coverage" NAME="shopping_feature_eng Coverage Results" MODIFIED="1736165742920" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts/transformation" />
-    <SUITE FILE_PATH="coverage/DataCollectors$NewsScraper.coverage" NAME="NewsScraper Coverage Results" MODIFIED="1736072183831" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scrapers/scrapers" />
-    <SUITE FILE_PATH="coverage/DataCollectors$newsPreproccess.coverage" NAME="newsPreproccess Coverage Results" MODIFIED="1736073349064" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/preproccess" />
+    <SUITE FILE_PATH="coverage/DataCollectors$.coverage" NAME=" Coverage Results" MODIFIED="1736173643326" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/DataCollectors$validators.coverage" NAME="validators Coverage Results" MODIFIED="1736168346475" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/validation" />
-    <SUITE FILE_PATH="coverage/DataCollectors$shoppingPreproccess.coverage" NAME="shoppingPreproccess Coverage Results" MODIFIED="1736075098156" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/preproccess" />
-    <SUITE FILE_PATH="coverage/DataCollectors$testt.coverage" NAME="testt Coverage Results" MODIFIED="1736165422101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DataCollectors$test_scrapers.coverage" NAME="test_scrapers Coverage Results" MODIFIED="1736174041310" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/DataCollectors$jobsPreprocess.coverage" NAME="jobsPreprocess Coverage Results" MODIFIED="1736074450858" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/preproccess" />
-    <SUITE FILE_PATH="coverage/DataCollectors$shoppingScraper.coverage" NAME="shoppingScraper Coverage Results" MODIFIED="1736074879231" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scrapers/scrapers" />
-    <SUITE FILE_PATH="coverage/DataCollectors$forums_feature_eng.coverage" NAME="forums_feature_eng Coverage Results" MODIFIED="1736089912283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts/transformation" />
+    <SUITE FILE_PATH="coverage/DataCollectors$testDomainScraper.coverage" NAME="testDomainScraper Coverage Results" MODIFIED="1736173628292" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts/scrapers" />
     <SUITE FILE_PATH="coverage/DataCollectors$shopping_feautures_eng.coverage" NAME="shopping_feautures_eng Coverage Results" MODIFIED="1736093401191" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts/transformation" />
     <SUITE FILE_PATH="coverage/DataCollectors$aggregated_feature.coverage" NAME="aggregated_feature Coverage Results" MODIFIED="1736100098321" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts/transformation" />
     <SUITE FILE_PATH="coverage/DataCollectors$forumsPreproccess.coverage" NAME="forumsPreproccess Coverage Results" MODIFIED="1736159711278" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts/cleanning" />
     <SUITE FILE_PATH="coverage/DataCollectors$mainScraper.coverage" NAME="mainScraper Coverage Results" MODIFIED="1736142173746" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts/scrapers" />
     <SUITE FILE_PATH="coverage/DataCollectors$jobs_feature_eng.coverage" NAME="jobs_feature_eng Coverage Results" MODIFIED="1736092821507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts/transformation" />
-    <SUITE FILE_PATH="coverage/DataCollectors$feature_engineering.coverage" NAME="feature_engineering Coverage Results" MODIFIED="1736085667781" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts/transformation" />
     <SUITE FILE_PATH="coverage/DataCollectors$review_features_eng.coverage" NAME="review_features_eng Coverage Results" MODIFIED="1736090560371" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts/transformation" />
     <SUITE FILE_PATH="coverage/DataCollectors$config.coverage" NAME="config Coverage Results" MODIFIED="1736164270820" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/DataCollectors$forumsScraper.coverage" NAME="forumsScraper Coverage Results" MODIFIED="1736066843679" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scrapers/scrapers" />
+    <SUITE FILE_PATH="coverage/DataCollectors$news_feature_eng.coverage" NAME="news_feature_eng Coverage Results" MODIFIED="1736090962289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts/transformation" />
+    <SUITE FILE_PATH="coverage/DataCollectors$ReviewsScraper.coverage" NAME="ReviewsScraper Coverage Results" MODIFIED="1736066799277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scrapers/scrapers" />
+    <SUITE FILE_PATH="coverage/DataCollectors$main.coverage" NAME="main Coverage Results" MODIFIED="1736179136852" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/DataCollectors$shopping_feature_eng.coverage" NAME="shopping_feature_eng Coverage Results" MODIFIED="1736165742920" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts/transformation" />
+    <SUITE FILE_PATH="coverage/DataCollectors$newsPreproccess.coverage" NAME="newsPreproccess Coverage Results" MODIFIED="1736073349064" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/preproccess" />
+    <SUITE FILE_PATH="coverage/DataCollectors$NewsScraper.coverage" NAME="NewsScraper Coverage Results" MODIFIED="1736072183831" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scrapers/scrapers" />
+    <SUITE FILE_PATH="coverage/DataCollectors$shoppingPreproccess.coverage" NAME="shoppingPreproccess Coverage Results" MODIFIED="1736075098156" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/preproccess" />
+    <SUITE FILE_PATH="coverage/DataCollectors$testt.coverage" NAME="testt Coverage Results" MODIFIED="1736165422101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DataCollectors$shoppingScraper.coverage" NAME="shoppingScraper Coverage Results" MODIFIED="1736074879231" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scrapers/scrapers" />
+    <SUITE FILE_PATH="coverage/DataCollectors$forums_feature_eng.coverage" NAME="forums_feature_eng Coverage Results" MODIFIED="1736089912283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts/transformation" />
+    <SUITE FILE_PATH="coverage/DataCollectors$feature_engineering.coverage" NAME="feature_engineering Coverage Results" MODIFIED="1736085667781" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts/transformation" />
     <SUITE FILE_PATH="coverage/DataCollectors$reviewsPreproccess.coverage" NAME="reviewsPreproccess Coverage Results" MODIFIED="1736163932889" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts/cleanning" />
     <SUITE FILE_PATH="coverage/DataCollectors$reviewsPreprocess.coverage" NAME="reviewsPreprocess Coverage Results" MODIFIED="1736073401732" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/preproccess" />
   </component>

@@ -1,5 +1,4 @@
-import os
-from validation.validators import validate_scraped_data, validate_transformed_data
+from tests.validation.validators import validate_scraped_data, validate_transformed_data
 
 # Configuration for validation
 DOMAIN_VALIDATION_CONFIGS = {
