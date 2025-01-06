@@ -10,6 +10,29 @@ def loginng():
         format="%(asctime)s - %(levelname)s - %(message)s"
     )
 
+
+def validate_data(file_path, validation_rules):
+    """Validate data against defined rules."""
+    import pandas as pd
+    try:
+        data = pd.read_csv(file_path)
+        # Check required columns
+        for col in validation_rules.get("required_columns", []):
+            if col not in data.columns:
+                logging.error(f"Validation failed: Missing column '{col}' in {file_path}")
+                return False
+        # Check non-empty columns
+        for col in validation_rules.get("non_empty_columns", []):
+            if data[col].isnull().any():
+                logging.error(f"Validation failed: Column '{col}' contains empty values in {file_path}")
+                return False
+        logging.info(f"Validation passed for {file_path}")
+        return True
+    except Exception as e:
+        logging.error(f"Error during validation for {file_path}: {e}")
+        return False
+
+
 def run_scraper(domain):
     """Run the scraper, cleaning, and transformation pipeline for a specific domain."""
     logging.info(f"Starting pipeline for {domain}...")
@@ -27,6 +50,11 @@ def run_scraper(domain):
             raw_data = scraper_module.parse_data(html_scraped)
             logging.info(f"{domain} scraping completed.")
             utils.save_to_csv(raw_data, config["RAW_OUTPUT_FILE"])
+
+            # Validate scraped data
+            if not validate_data(config["RAW_OUTPUT_FILE"], config["validation"]["scraped"]):
+                logging.error(f"Validation failed for scraped data in domain: {domain}")
+                return  # Exit early if validation fails
         else:
             logging.error(f"'parse_data' function not found in {domain}Scraper.")
             return  # Exit early for this domain
@@ -42,6 +70,12 @@ def run_scraper(domain):
         transformed_data = transformer_module.transform(config["CLEANED_OUTPUT_FILE"])
         logging.info(f"{domain} data transformed.")
         utils.save_to_csv(transformed_data, config["TRANSFORMED_OUTPUT_FILE"])
+
+        # Validate transformed data
+        if not validate_data(config["TRANSFORMED_OUTPUT_FILE"], config["validation"]["transformed"]):
+            logging.error(f"Validation failed for transformed data in domain: {domain}")
+        else:
+            logging.info(f"Validation passed for transformed data in domain: {domain}")
     else:
         logging.error(f"Failed to scrape {domain}.")
 
